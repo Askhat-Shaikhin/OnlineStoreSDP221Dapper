@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Model;
+using OnlineStore.Services.Interfaces;
 
 namespace OnlineStoreSDP221Dapper.Controllers
 {
@@ -8,34 +9,46 @@ namespace OnlineStoreSDP221Dapper.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        [HttpGet("products")]
-        public async Task<IActionResult> GetProducts()
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
         {
-            throw new NotImplementedException();
+            _productService = productService;
+        }
+
+        [HttpGet("products")]
+        public async Task<IActionResult> GetProducts(int? top = null)
+        {
+            var result = await _productService.GetProducts(top);
+            return Ok(result);
         }
 
         [HttpGet("product")]
         public async Task<IActionResult> GetProductById(int id)
         {
-            throw new NotImplementedException();
+            var result = await _productService.GetProductById(id);
+            return Ok(result);
         }
 
         [HttpPut("product")]
         public async Task<IActionResult> CreateProduct([FromBody] Product product)
         {
-            throw new NotImplementedException();
+            var result = await _productService.SaveProduct(product);
+            return Ok(result);
         }
 
         [HttpPost("product")]
         public async Task<IActionResult> UpdateProduct([FromBody] Product product)
         {
-            throw new NotImplementedException();
+            var result = await _productService.UpdateProduct(product);
+            return Ok(result);
         }
 
         [HttpDelete("product")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            throw new NotImplementedException();
+            await _productService.DeleteProduct(id);
+            return Ok();
         }
     }
 }

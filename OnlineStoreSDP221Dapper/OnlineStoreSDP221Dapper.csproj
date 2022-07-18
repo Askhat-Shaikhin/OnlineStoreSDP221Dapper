@@ -12,6 +12,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineStore.Model\OnlineStore.Model.csproj" />
+    <ProjectReference Include="..\OnlineStore.Repository.Impl\OnlineStore.Repository.Impl.csproj" />
+    <ProjectReference Include="..\OnlineStore.Repository.Interfaces\OnlineStore.Repository.Interfaces.csproj" />
+    <ProjectReference Include="..\OnlineStore.Services.Impl\OnlineStore.Services.Impl.csproj" />
+    <ProjectReference Include="..\OnlineStore.Services.Interfaces\OnlineStore.Services.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

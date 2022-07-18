@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreSDP221Dapper", "OnlineStoreSDP221Dapper\OnlineStoreSDP221Dapper.csproj", "{7AFEE896-CE3B-47CA-8E64-D804C17C327E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStoreSDP221Dapper", "OnlineStoreSDP221Dapper\OnlineStoreSDP221Dapper.csproj", "{7AFEE896-CE3B-47CA-8E64-D804C17C327E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repository.Interfaces", "OnlineStore.Repository.Interfaces\OnlineStore.Repository.Interfaces.csproj", "{15526540-C89B-47B2-BDD3-EC244DE4D2DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repository.Interfaces", "OnlineStore.Repository.Interfaces\OnlineStore.Repository.Interfaces.csproj", "{15526540-C89B-47B2-BDD3-EC244DE4D2DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Model", "OnlineStore.Model\OnlineStore.Model.csproj", "{2EDB41DB-F663-4403-9407-1A7EA1EB01E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Model", "OnlineStore.Model\OnlineStore.Model.csproj", "{2EDB41DB-F663-4403-9407-1A7EA1EB01E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repository.Impl", "OnlineStore.Repository.Impl\OnlineStore.Repository.Impl.csproj", "{C7BC1969-FC5E-4704-99E8-611F6B064DE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repository.Impl", "OnlineStore.Repository.Impl\OnlineStore.Repository.Impl.csproj", "{C7BC1969-FC5E-4704-99E8-611F6B064DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Services.Interfaces", "OnlineStore.Services.Interfaces\OnlineStore.Services.Interfaces.csproj", "{A07086F6-156E-4331-8105-C16970C8D314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Services.Impl", "OnlineStore.Services.Impl\OnlineStore.Services.Impl.csproj", "{FEC31827-A173-4649-928A-093123145F08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C7BC1969-FC5E-4704-99E8-611F6B064DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7BC1969-FC5E-4704-99E8-611F6B064DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7BC1969-FC5E-4704-99E8-611F6B064DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07086F6-156E-4331-8105-C16970C8D314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07086F6-156E-4331-8105-C16970C8D314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07086F6-156E-4331-8105-C16970C8D314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07086F6-156E-4331-8105-C16970C8D314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC31827-A173-4649-928A-093123145F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC31827-A173-4649-928A-093123145F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC31827-A173-4649-928A-093123145F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC31827-A173-4649-928A-093123145F08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
